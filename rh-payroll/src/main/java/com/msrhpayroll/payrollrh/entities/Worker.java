@@ -1,21 +1,16 @@
-package br.com.springmsjava.rhworker.entities;
+package com.msrhpayroll.payrollrh.entities;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
-@Entity
-@Table(name = "tb_worker")
+
 public class Worker implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
-    @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false)
     private Double dailyIncome;
 
     public Worker() {
